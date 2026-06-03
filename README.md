@@ -13,7 +13,7 @@
 
 ### ▶️ VM Setup Command
 
-bash <(curl -fsSL https://raw.githubusercontent.com/DulithaBandaranayake/vps/main/vps.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/DulithaBandaranayake/VPS/main/vps.sh)
 
 ---
 

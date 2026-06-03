@@ -14,6 +14,7 @@
 
   env = {
     EDITOR = "nano";
+    VM_DIR = "$HOME/Projects/VPS/vms";
   };
 
   idx = {
@@ -23,8 +24,12 @@
     ];
 
     workspace = {
-      onCreate = { };
-      onStart = { };
+      onCreate = {
+        mkdir -p "$VM_DIR";
+      };
+      onStart = {
+        mkdir -p "$VM_DIR";
+      };
     };
 
     previews = {
