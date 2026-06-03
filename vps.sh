@@ -84,9 +84,9 @@ check_dependencies() {
     done
     
     if [ ${#missing_deps[@]} -ne 0 ]; then
-        print_status "ERROR" "Missing dependencies: ${missing_deps[*]}"
+        print_status "WARN" "Missing dependencies: ${missing_deps[*]}"
         print_status "INFO" "On Ubuntu/Debian, try: sudo apt install qemu-system cloud-image-utils wget"
-        exit 1
+        print_status "INFO" "Continuing anyway — VM start will fail if deps are missing"
     fi
 }
 
